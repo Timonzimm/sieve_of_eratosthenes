@@ -18,7 +18,9 @@ public class Sieve {
 	{
 		// Sieve of Eratosthenes
 		boolean[] numbers = new boolean[max+1];
+		// Set all numbers contained in the array to true, meaning they are prime
 		Arrays.fill(numbers, Boolean.TRUE);
+		// By definition, 0 and 1 are not prime
 		numbers[0] = false;
 		numbers[1] = false;
 		
